@@ -2,10 +2,18 @@ package problemsolving;
 
 import java.lang.StringBuilder;
 
-
+/**
+ * 
+ * @author alan treanor
+ * TimeConversion class holds one method to solve hackerrank problem
+ */
 public class TimeConversion {
 
-
+	/**
+	 * timeConversion method translates 12 hour time to 24 hour time
+	 * @param str	in format hh:mm:ssAM or PM
+	 * @return		a string with 24 hour format, eg. 09:30:15PM becomes 21:30:15
+	 */
 	static String timeConversion(String str) {
 		
 		// initialise String & Integer variables to help with conversions 
@@ -57,6 +65,7 @@ public class TimeConversion {
 		String test1 = "12:05:45PM";
 		String test2 = "06:40:22AM";
 		String test3 = "12:45:54PM";
+		// invoke method passing test strings
 		timeConversion(test1);
 		timeConversion(test2);
 		timeConversion(test3);
